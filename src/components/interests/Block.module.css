@@ -1,6 +1,6 @@
 .block {
   width: 100%;
-  height: 200px;
+  height: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,3 +77,20 @@
   transform: scale(1.1);
   color: var(--rose);
 }
+
+@media (min-width: 768px) {
+  .block {
+    height: 200px;
+  }
+
+.text {
+  font-size: 2rem;
+}
+
+.svgIcon {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+ }
