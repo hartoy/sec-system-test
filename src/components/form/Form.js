@@ -1,43 +1,87 @@
 'use client'
-
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { Formik, Field, Form as FormikForm, ErrorMessage } from 'formik'
+import * as Yup from 'yup'
 import styles from './Form.module.css'
 
 const Form = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [submitted, setSubmitted] = useState(false)
+  const validationSchema = Yup.object({
+    name: Yup.string()
+      .trim()
+      .matches(/^[A-Za-z\s]+$/, 'Only letters allowed for the name')
+      .min(3, 'Name must be at least 3 characters')
+      .required('Name is required'),
+    email: Yup.string().email('Invalid email address').required('Email is required'),
+    message: Yup.string().trim().min(5, 'Message must contain at least 5 characters').required('Message is required'),
+  })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setForm({ ...form, [name]: value })
-  }
+  const [send, setSend] = useState(false)
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (form.name && form.email && form.message) {
-      setSubmitted(true)
-      setForm({ name: '', email: '', message: '' })
-    }
-  }
+  useEffect(() => {
+    console.log('send', send)
+  }, [send])
 
   return (
     <section id="contact" className={styles.contactForm}>
       <h2>Contacto</h2>
-      {submitted && <p className={styles.success}>Mensaje enviado con éxito!</p>}
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Enter name" value={form.name} onChange={handleChange} />
+      <Formik
+        initialValues={{ name: '', email: '', message: '' }}
+        validationSchema={validationSchema}
+        onSubmit={(values, { setSubmitting, resetForm }) => {
+          setTimeout(() => {
+            console.log('Formulario enviado', values)
+            setSend(true)
+            setSubmitting(false)
+            resetForm()
+          }, 400)
 
-        <input type="email" name="email" placeholder="Enter email" value={form.email} onChange={handleChange} />
+          setTimeout(() => {
+            setSend(false)
+          }, 10000)
+        }}
+      >
+        {({ isSubmitting, isValid, touched, errors }) => (
+          <FormikForm className={send ? `${styles.form} ${styles.successBg}` : styles.form}>
+            <div>
+              <Field
+                type="text"
+                name="name"
+                placeholder="Enter name"
+                className={`${styles.input} ${touched.name && !errors.name ? styles.touched : ''}`}
+              />
+              <ErrorMessage name="name" component="div" className={styles.error} />
+            </div>
 
-        <textarea
-          name="message"
-          placeholder="Write your message"
-          value={form.message}
-          onChange={handleChange}
-        ></textarea>
+            <div>
+              <Field
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                className={`${styles.input} ${touched.email && !errors.email ? styles.touched : ''}`}
+              />
+              <ErrorMessage name="email" component="div" className={styles.error} />
+            </div>
 
-        <button type="submit">Enviar</button>
-      </form>
+            <div>
+              <Field
+                as="textarea"
+                name="message"
+                placeholder="Write your message"
+                className={`${styles.input} ${touched.message && !errors.message ? styles.touched : ''}`}
+              />
+              <ErrorMessage name="message" component="div" className={styles.error} />
+            </div>
+
+            {!send && (
+              <button type="submit" disabled={isSubmitting || !isValid}>
+                Enviar
+              </button>
+            )}
+
+            {send && <p className={styles.success}>Message sent ✔️</p>}
+          </FormikForm>
+        )}
+      </Formik>
     </section>
   )
 }
