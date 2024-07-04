@@ -23,7 +23,7 @@ const Form = () => {
 
   return (
     <section id="contact" className={styles.contactForm}>
-      <h2>Contacto</h2>
+      <h2>Contact</h2>
       <Formik
         initialValues={{ name: '', email: '', message: '' }}
         validationSchema={validationSchema}
