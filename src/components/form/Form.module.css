@@ -1,0 +1,52 @@
+.contactForm {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-size: cover;
+            background-position: bottom;
+            background: url('/images/bg-forest2.jpg') no-repeat;
+            width: 100vw;
+}
+
+
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius:10px;
+    padding:30px 40px;
+    border: 2px solid rgba(255, 255,255, .2)
+}
+
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contactForm button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contactForm button:hover {
+    background-color: #005bb5;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}

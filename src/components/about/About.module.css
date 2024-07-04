@@ -1,0 +1,143 @@
+.about {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-size: cover;
+        background-position: bottom;
+        background: url('/images/bg-forest2.jpg') no-repeat;
+        width: 100%;
+}
+
+
+.content{
+    background-color: white;
+    border-radius:5px;
+    padding: 15px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease;
+}
+
+.content:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    background-color: white;
+}
+
+.header{
+    display:flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.headerTitle{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.headerImg {
+    width: 20%;
+}
+
+.profileImage{
+    border-radius: 50%;
+}
+
+.socials
+ {
+    display:flex;
+    list-style-type: none;
+}
+
+.socials li
+ {
+    margin-left: 10px;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    margin-bottom:5px;
+    color:var(--violet-grey);
+}
+
+.about h3:hover {
+    color: var(--violet-strong);
+}
+
+.about p {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.description {
+    text-align: center;
+}
+
+.description span {
+    font-size: 1.2em;
+    color:var(--violet-strong);
+    margin-top:10px;
+    display: block;
+    font-weight: 700;
+}
+
+.description span:hover {
+    color: var(--violet-grey);
+}
+
+.description p {
+    margin-top:5px;
+}
+
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.contact li{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+@media (min-width: 768px)  {
+
+.content{
+    max-width: 850px;
+}    
+
+.headerTitle  h3{
+font-size: 2.5em;
+}
+
+.headerImg {
+    width: 10%;
+}
+
+.headerImg img{
+    height: 100px;
+    width: 100px;
+}
+
+.socials img {
+    height: 30px;
+    width: 30px;
+}
+
+.description span {
+    font-size: 1.6em;
+}
+
+.description p {
+    font-size: 1.2em;
+    margin-top: 8px;
+}
+}

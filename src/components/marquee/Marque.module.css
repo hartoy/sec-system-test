@@ -1,0 +1,26 @@
+
+.marquee {
+    color: white;
+    background-color: var(--violet-strong);
+    height: 55px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .marquee {
+        font-size: 1.2rem;
+    }
+}
+
+.marquee:hover {
+    background-color: var(--violet-grey);
+    color: white;
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
