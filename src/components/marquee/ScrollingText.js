@@ -1,6 +1,6 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
-import styles from './mARQUE.module.css'
+import styles from './Marque.module.css'
 
 const ScrollingText = () => {
   return (
