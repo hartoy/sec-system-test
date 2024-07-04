@@ -37,7 +37,7 @@ const Form = () => {
 
           setTimeout(() => {
             setSend(false)
-          }, 10000)
+          }, 3000)
         }}
       >
         {({ isSubmitting, isValid, touched, errors }) => (
