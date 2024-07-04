@@ -26,6 +26,7 @@
     max-width: 600px;
     max-height: 500px;
   }
+
 }
 
 .contactForm form:hover {
@@ -59,7 +60,7 @@
   font-style: italic;
   opacity: 0.6;
   padding-left: 5px;
-  font-weight: 600;
+  font-family: "Bowlby One SC", sans-serif;
 }
 
 .contactForm input.touched:not(:focus):not(:placeholder-shown):not(.error),
@@ -85,6 +86,14 @@
 .contactForm button:hover {
   background-color: var(--violet-grey);
   transform: scale(1.05);
+  color:var(--rose)
+}
+
+@media (min-width: 600px) {
+  .contactForm button {
+      width: 30%;
+    }
+
 }
 
 .success,
@@ -98,6 +107,8 @@
   color: green;
   text-align: center;
   font-size: 1.2rem;
+  font-family: "Bowlby One SC", sans-serif;
+  letter-spacing: 1px;
 }
 
 .error {
