@@ -6,7 +6,7 @@
         height: 100vh;
         background-size: cover;
         background-position: bottom;
-        background: url('/images/bg-forest2.jpg') no-repeat;
+        background: url('/images/bg-section1.jpg') no-repeat;
         width: 100%;
         margin-top:20px;
 }
@@ -62,7 +62,7 @@
 }
 
 .about h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom:5px;
     color:var(--violet-grey);
 }
@@ -72,8 +72,8 @@
 }
 
 .about p {
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 0.7em;
+    line-height: 1.1;
     font-weight: 500;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .description span {
-    font-size: 1.2em;
+    font-size: 0.9em;
     color:var(--violet-strong);
     margin-top:10px;
     display: block;
