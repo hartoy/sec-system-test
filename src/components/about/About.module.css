@@ -93,6 +93,11 @@
   margin-top: 5px;
 }
 
+.descriptionSuB {
+  display: flex;
+  flex-direction:column
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -127,6 +132,14 @@
     height: 30px;
     width: 30px;
   }
+  
+  .descriptionSuB{
+    flex-direction: row;
+  }
+   
+    .descriptionSuB>div {
+      flex: 1;
+    }
 
   .description span {
     font-size: 1.4em;

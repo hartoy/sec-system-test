@@ -38,10 +38,20 @@ const About = () => {
           </div>
         </div>
         <div className={styles.description}>
-          <div>
-            <span>Ocupation</span>
-            <p>Frontend developer</p>
+          <div className={styles.descriptionSuB}>
+            <div>
+              <span>Ocupation</span>
+              <p>Frontend developer</p>
+            </div>
+            <div>
+              <span>Portfolio</span>
+
+              <Link href="https://nachohardoy-web.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <p>nachohardoy-web.vercel.app</p>
+              </Link>
+            </div>
           </div>
+
           <div>
             <span>Description</span>
             <p>
@@ -50,23 +60,8 @@ const About = () => {
             </p>
           </div>
           <div>
-            <span>Tecnologies</span>
+            <span>Technologies</span>
             <ScrollingTex />
-          </div>
-          <div>
-            <span>Contact</span>
-            <ul className={styles.contact}>
-              <li>
-                <Link href="mailto:hartoyy@hotmail.com" target="_blank" rel="noopener noreferrer">
-                  <Image src="/images/email.svg" alt="My SVG Image" width={40} height={50} />
-                </Link>
-              </li>
-              <li>
-                <Link href="tel:+541156926173" target="_blank" rel="noopener noreferrer">
-                  <Image src="/images/phone.svg" alt="My SVG Image" width={50} height={50} />
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
