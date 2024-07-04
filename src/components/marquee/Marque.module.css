@@ -1,7 +1,7 @@
 .marquee {
   color: white;
   background-color: var(--violet-strong);
-  height: 55px;
+  height: 48px;
   margin-top: 10px;
   display: flex;
   align-items: center;

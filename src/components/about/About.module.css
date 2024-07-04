@@ -58,7 +58,7 @@
 }
 
 .about h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 5px;
   color: var(--violet-grey);
 }
@@ -68,7 +68,7 @@
 }
 
 .about p {
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1.1;
   font-weight: 500;
 }
@@ -78,7 +78,7 @@
 }
 
 .description span {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: var(--violet-strong);
   margin-top: 10px;
   display: block;
@@ -111,7 +111,7 @@
   }
 
   .headerTitle h3 {
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
 
   .headerImg {
@@ -129,11 +129,11 @@
   }
 
   .description span {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .description p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 8px;
   }
 }
