@@ -1,6 +1,7 @@
 # Security and System
 
-![Screenshot](screenshots/screenshot.png)
+
+![captura-proyecto](https://github.com/hartoy/sec-system-test/assets/54456516/075fdf08-a145-4136-a8bb-4eae84e76242)
 
 ## Description
 
