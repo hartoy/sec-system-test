@@ -18,26 +18,26 @@
 
 - Next.js - [Documentation](https://nextjs.org/docs/getting-started)
 - React - [Documentation](https://reactjs.org/docs/getting-started.html)
-- CSS Modules - [Documentación de CSS Modules](https://github.com/css-modules/css-modules)
-- Formik - [Documentación de Formik](https://formik.org/docs/overview)
-- Yup - [Documentación de Yup](https://github.com/jquense/yup)
-- React Fast Marquee - [Documentación de React Fast Marquee](https://github.com/imsingh/react-fast-marquee)
+- CSS Modules - [Documentation](https://github.com/css-modules/css-modules)
+- Formik - [Documentation](https://formik.org/docs/overview)
+- Yup - [Documentation](https://github.com/jquense/yup)
+- React Fast Marquee - [Documentation](https://github.com/imsingh/react-fast-marquee)
 
 ## Installation
 
 To run this project locally, follow these steps:
 
 1. Clone this repository:
-   git clone https://github.com/your-username/security-and-system.git
+  ``` git clone https://github.com/your-username/security-and-system.git ```
 
 2. Navigate into the project directory:
-   cd security-and-system
+ ```  cd security-and-system ```
 
 3. Install dependencies:
-   npm install
+  ``` npm install ```
 
 4. Run the development server:
-   npm run dev
+  ``` npm run dev ```
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
