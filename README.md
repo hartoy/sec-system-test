@@ -28,18 +28,26 @@
 To run this project locally, follow these steps:
 
 1. Clone this repository:
-  ``` git clone https://github.com/your-username/security-and-system.git ```
+```sh
+git clone https://github.com/your-username/security-and-system.git
+```
 
-2. Navigate into the project directory:
- ```  cd security-and-system ```
+3. Navigate into the project directory:
+ ```sh
+cd security-and-system
+```
 
-3. Install dependencies:
-  ``` npm install ```
+5. Install dependencies:
+  ```sh
+npm install
+ ```
 
-4. Run the development server:
-  ``` npm run dev ```
+7. Run the development server:
+  ```sh
+npm run dev
+```
 
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+9. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## How to Use
 
@@ -47,7 +55,8 @@ Once the project is running locally, you can navigate through the different sect
 
 - **About:** Displays static information about me.
 - **Interests:** Uses mapping to display content from an array created within the component of my personal interests.
-- **Form:** Includes form validations for name, email, and message fields with yup.
+- **Form:** Includes form validations for name, email, and message fields with yup. Upon form submission, the data is logged to the console using `console.log`.
+
 
 ## Deployment
 
