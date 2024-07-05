@@ -16,12 +16,12 @@
 
 ## Technologies Used
 
-- Next.js
-- React
-- CSS Modules
-- Formik
-- Yup
-- React Fast Marquee
+- Next.js - [Documentation](https://nextjs.org/docs/getting-started)
+- React - [Documentation](https://reactjs.org/docs/getting-started.html)
+- CSS Modules - [Documentación de CSS Modules](https://github.com/css-modules/css-modules)
+- Formik - [Documentación de Formik](https://formik.org/docs/overview)
+- Yup - [Documentación de Yup](https://github.com/jquense/yup)
+- React Fast Marquee - [Documentación de React Fast Marquee](https://github.com/imsingh/react-fast-marquee)
 
 ## Installation
 
