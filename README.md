@@ -1,6 +1,6 @@
 # Security and System
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshots/screenshot.png)
 
 ## Description
 
